@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    --inputBorder: hsl(210, 10%, 80%);
+    --alertColor: black;
 }
 
 .container {
@@ -39,7 +41,7 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     width: 100%;
-    border: 2px solid hsl(210, 10%, 80%);
+    border: 2px solid var(--inputBorder);
 }
 
 .container__form__input:focus {
@@ -60,6 +62,7 @@ body {
     letter-spacing: 0.1em;
     background-color: white;
     cursor: pointer;
+    transition: 200ms ease-out;
 }
 
 .container__form__button:focus {
@@ -71,8 +74,24 @@ body {
     border: 1px solid hsl(210, 10%, 80%);
 }
 
+.container__form__reset:hover {
+    border: 1px solid hsl(220, 50%, 50%);
+}
+
 .container__form__submit {
     color: white;
     background-color: hsl(220, 90%, 60%);
     border: none;
+}
+
+.container__form__submit:hover {
+    background-color: hsl(220, 70%, 50%);
+}
+
+.container__form__alert {
+    color: var(--alertColor);
+}
+
+.hidden {
+    display: none;
 }
