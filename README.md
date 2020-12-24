@@ -1,5 +1,9 @@
 # dynamic-css-variables (Dynamic CSS Variables)
 
+## Current Version
+
+Live Version: [https://nitearie.github.io/dynamic-css-variables/](https://nitearie.github.io/dynamic-css-variables/)
+
 ## General Info
 
 CSS variables are a powerful tool that lets the developer associate a symbolic name with a value, and then use that name in the stylesheet wherever that value is required. The advantage is that when a change to that value is required it only needs to change in the CSS variable definition rather than in the many spots it may be used.
